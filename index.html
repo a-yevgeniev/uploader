@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>File uploader</title>
+        <meta name="description" content="File uploader.">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>File uploader from CSS Tricks</h1>
+        <h3>
+            <a href="https://css-tricks.com/drag-and-drop-file-uploading">Drag and Drop File Uploading</a>
+        </h3>
+        
+        <form class="form" method="post" action="" enctype="multipart/form-data">
+            <div class="uploader">
+              <div class="uploader-input">
+                <input class="uploader-file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
+                <label for="file"><strong>Choose a file</strong><span class="uploader-dragndrop"> or drag it here</span>.</label>
+              </div>
+              <div class="uploader-uploading">Uploading&hellip;</div>
+              <div class="uploader-success">Done!</div>
+              <div class="uploader-error">Error! <span></span>.</div>
+            </div>
+            <div>
+                <button class="uploader-button" type="submit">Upload</button>
+            </div>
+        </form>        
+        
+        <script
+          src="https://code.jquery.com/jquery-2.2.4.min.js"
+          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous"></script>
+        <script src="uploader.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
